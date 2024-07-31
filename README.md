@@ -4,9 +4,9 @@ Two-Factor Authentication Multi-Factor Authentication (MFA), is an open-source s
 
 ## 🚀 How does it work?
 
-In addition to the usual ID and password pair, you are required to provide an additional secret code, usually 6-digit long, to login which you obtain from an authenticator application (e.g. [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) or [this Chrome extension](https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai)) installed in your phone or web browser which you have registered with the platform or website you are logging into by simply scanning a QR code. After the initial registration step, the authenticator app doesn’t even need to be online to give you the required secret OTP. Magic! Right?
+In addition to the usual ID and password pair, you are required to provide an additional secret code, usually 6-digit long, to login which you obtain from an authenticator application (e.g. [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) or [this Chrome extension](https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai)) installed in your phone or web browser which you have registered with the platform or website you are logging into by simply scanning a QR code. After the initial registration step
 
-As it is with all things in computer science, it turns out it is not magic, rather it is only some solid logic. At the heart of 2FA/MFA, the kind we are going to implement, are two cryptographic algorithms. The first algorithm when simplified takes as input three things:
+ Ther are two cryptographic algorithms. The first algorithm when simplified takes as input three things:
 
 1. The current approximate time on the clock
 2. A user specific secret key
